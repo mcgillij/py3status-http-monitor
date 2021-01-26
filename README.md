@@ -1,6 +1,9 @@
 # http_monitor
 py3status module for monitoring http services
 
+## Screenshot
+![Status Bar with http_monitor](/images/status_bar.png)
+
 ## Prerequisites
 
 This is an i3 / py3status module, so you'll need those first off.
