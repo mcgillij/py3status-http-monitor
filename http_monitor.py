@@ -14,7 +14,6 @@ class Py3status:
 
     def _get_status(self):
         try:
-            self.py3.log(self.service_location)
             status = self.py3.request(self.service_location, timeout=self.timeout)
             if status.status_code != 200:
                 return self.status_bad
