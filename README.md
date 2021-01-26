@@ -18,8 +18,6 @@ git clone git@github.com:mcgillij/http_monitor.git ~/.i3/py3status/
 
 Next you will need to add the services you want to monitor, and optionally choose some appropriate emoji's.
 
-Here's an excerpt from my configuration file located at *~/.config/i3/i3status.conf*.
-
 **~/.config/i3/i3status.conf**
 
 ```bash
