@@ -1,15 +1,30 @@
 [tool.poetry]
-name = "http_monitor"
+name = "py3status-http-monitor"
 version = "0.1.0"
-description = ""
+description = "py3status http monitor show the status of http endpoints"
 authors = ["mcgillij <mcgillivray.jason@gmail.com>"]
 license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/mcgillij/py3status-http-monitor"
+repository = "https://github.com/mcgillij/py3status-http-monitor"
+documentation = "https://github.com/mcgillij/py3status-http-monitor"
+keywords = ["http", "monitor", "status", "i3", "py3status"]
+include = [ "LICENSE", ]
+
+[tool.poetry.scripts]
+py3status_http_monitor = "py3status_http_monitor:run"
+
+[tool.poetry.plugins."py3status"]
+module = "py3status_http_monitor"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-py3status = "^3.31"
+py3status = "^3.34"
 
 [tool.poetry.dev-dependencies]
+black = "^20.8b1"
+pylint = "^2.7.2"
+flake8 = "^3.8.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

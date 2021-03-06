@@ -1,8 +1,8 @@
-# http_monitor
+# py3status_http_monitor
 py3status module for monitoring http services
 
 ## Screenshot
-![Status Bar with http_monitor](/images/status_bar.png)
+![Status Bar with py3status_http_monitor](/images/status_bar.png)
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ This is an i3 / py3status module, so you'll need those first off.
 ## Installation
 
 ```bash
-git clone git@github.com:mcgillij/http_monitor.git ~/.i3/py3status/
+git clone git@github.com:mcgillij/py3status-http-monitor.git ~/.i3/py3status/
 ```
 
 ## Configuration
@@ -27,48 +27,48 @@ general {
         interval = 15
 }
 
-order += "http_monitor apache"
-order += "http_monitor medusa"
-order += "http_monitor pihole"
-order += "http_monitor nextcloud"
-order += "http_monitor plex"
-order += "http_monitor virtualbox"
-order += "http_monitor airsonic"
+order += "py3status_http_monitor apache"
+order += "py3status_http_monitor medusa"
+order += "py3status_http_monitor pihole"
+order += "py3status_http_monitor nextcloud"
+order += "py3status_http_monitor plex"
+order += "py3status_http_monitor virtualbox"
+order += "py3status_http_monitor airsonic"
 order += "clock"
 order += "mail"
 ...
 
-http_monitor  'nextcloud' {
+py3status_http_monitor  'nextcloud' {
    service_location = "http://yourserver:8181"
    service_name = '⛅'
 }
 
-http_monitor  'virtualbox' {
+py3status_http_monitor  'virtualbox' {
    service_location = "http://yourserver:81/vb/"
    service_name = '💻'
 }
 
-http_monitor  'plex' {
+py3status_http_monitor  'plex' {
    service_location = "http://yourserver:32400/web/index.html#"
    service_name = '🎥'
 }
 
-http_monitor  'airsonic' {
+py3status_http_monitor  'airsonic' {
    service_location = "http://yourserver:4040"
    service_name = '🍃'
 }
 
-http_monitor  'pihole' {
+py3status_http_monitor  'pihole' {
    service_location = "http://yourserver:80"
    service_name = '🕳️ '
 }
 
-http_monitor  'apache' {
+py3status_http_monitor  'apache' {
    service_location = "http://yourserver:81"
    service_name = '🪶'
 }
 
-http_monitor  'medusa' {
+py3status_http_monitor  'medusa' {
    service_location = "http://yourserver:8081"
    service_name = '🐍'
 }
