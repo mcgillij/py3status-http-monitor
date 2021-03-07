@@ -35,10 +35,6 @@ class Py3status:
         }
 
 
-def run():
-    print("You need to install py3status-http-monitor into ~/.i3/py3status/")
-
-
 if __name__ == "__main__":
     from py3status.module_test import module_test
     module_test(Py3status)

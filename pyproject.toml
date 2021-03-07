@@ -11,11 +11,8 @@ documentation = "https://github.com/mcgillij/py3status-http-monitor"
 keywords = ["http", "monitor", "status", "i3", "py3status"]
 include = [ "LICENSE", ]
 
-[tool.poetry.scripts]
-py3status_http_monitor = "py3status_http_monitor:run"
-
 [tool.poetry.plugins."py3status"]
-module = "py3status_http_monitor"
+module = "py3status_http_monitor.http_monitor"
 
 [tool.poetry.dependencies]
 python = "^3.9"
