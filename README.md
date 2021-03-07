@@ -27,48 +27,48 @@ general {
         interval = 15
 }
 
-order += "py3status_http_monitor apache"
-order += "py3status_http_monitor medusa"
-order += "py3status_http_monitor pihole"
-order += "py3status_http_monitor nextcloud"
-order += "py3status_http_monitor plex"
-order += "py3status_http_monitor virtualbox"
-order += "py3status_http_monitor airsonic"
+order += "http_monitor apache"
+order += "http_monitor medusa"
+order += "http_monitor pihole"
+order += "http_monitor nextcloud"
+order += "http_monitor plex"
+order += "http_monitor virtualbox"
+order += "http_monitor airsonic"
 order += "clock"
 order += "mail"
 ...
 
-py3status_http_monitor  'nextcloud' {
+http_monitor  'nextcloud' {
    service_location = "http://yourserver:8181"
    service_name = '⛅'
 }
 
-py3status_http_monitor  'virtualbox' {
+http_monitor  'virtualbox' {
    service_location = "http://yourserver:81/vb/"
    service_name = '💻'
 }
 
-py3status_http_monitor  'plex' {
+http_monitor  'plex' {
    service_location = "http://yourserver:32400/web/index.html#"
    service_name = '🎥'
 }
 
-py3status_http_monitor  'airsonic' {
+http_monitor  'airsonic' {
    service_location = "http://yourserver:4040"
    service_name = '🍃'
 }
 
-py3status_http_monitor  'pihole' {
+http_monitor  'pihole' {
    service_location = "http://yourserver:80"
    service_name = '🕳️ '
 }
 
-py3status_http_monitor  'apache' {
+http_monitor  'apache' {
    service_location = "http://yourserver:81"
    service_name = '🪶'
 }
 
-py3status_http_monitor  'medusa' {
+http_monitor  'medusa' {
    service_location = "http://yourserver:8081"
    service_name = '🐍'
 }
