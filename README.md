@@ -18,10 +18,12 @@ mkdir -p ~/.i3/py3status && cd ~/.i3/py3status
 ln -s <PATH_TO_CLONED_REPO>/src/py3status-http-monitor/http_monitor.py ./
 ```
 
-### With Pip
+### With Pip, Pipenv or Poetry
 
 ``` bash
 pip install py3status-http-monitor
+pipenv install py3status-http-monitor
+poetry add py3status-http-monitor && poetry install
 ```
 
 ### Building Arch package w/PKGBUILD
@@ -106,3 +108,7 @@ You can pass in the following configuration options:
 * service_name
 * timeout
 * cache_timeout
+
+## Restart i3
+
+Once the package is installed and configured you just need to restart i3.
