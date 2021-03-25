@@ -1,8 +1,8 @@
-# py3status_http_monitor
-py3status module for monitoring http services
+# py3status-http-monitor
+Python module for monitoring **http** services in your py3status bar.
 
 ## Screenshot
-![Status Bar with py3status_http_monitor](/images/status_bar.png)
+![Status Bar with py3status_http_monitor](https://raw.githubusercontent.com/mcgillij/py3status-http-monitor/main/images/status_bar.png)
 
 ## Prerequisites
 
@@ -10,8 +10,32 @@ This is an i3 / py3status module, so you'll need those first off.
 
 ## Installation
 
-```bash
-git clone git@github.com:mcgillij/py3status-http-monitor.git ~/.i3/py3status/
+### From Git
+
+``` bash
+git clone https://github.com/mcgillij/py3status-http-monitor.git
+mkdir -p ~/.i3/py3status && cd ~/.i3/py3status
+ln -s <PATH_TO_CLONED_REPO>/src/py3status-http-monitor/http_monitor.py ./
+```
+
+### With Pip
+
+``` bash
+pip install py3status-http-monitor
+```
+
+### Building Arch package w/PKGBUILD
+
+``` bash
+git clone https://aur.archlinux.org/py3status-http-monitor.git
+cd py3status-http-monitor.git
+makechrootpkg -c -r $HOME/$CHROOT
+```
+
+### Installing built Arch package
+
+``` bash
+sudo pacman -U --asdeps py3status-http-monitor-*-any.pkg.tar.zst
 ```
 
 ## Configuration
@@ -72,7 +96,8 @@ http_monitor  'medusa' {
    service_location = "http://yourserver:8081"
    service_name = '🐍'
 }
-``` 
+```
+
 ## Configuration Options
 
 You can pass in the following configuration options:
@@ -81,4 +106,3 @@ You can pass in the following configuration options:
 * service_name
 * timeout
 * cache_timeout
-
