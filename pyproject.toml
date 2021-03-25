@@ -11,6 +11,14 @@ documentation = "https://github.com/mcgillij/py3status-http-monitor"
 keywords = ["http", "monitor", "status", "i3", "py3status"]
 include = [ "LICENSE", ]
 
+classifiers = [
+    "Environment :: X11 Applications",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Desktop Environment :: Window Managers",
+    "Topic :: System :: Monitoring",
+]
+
 [tool.poetry.plugins."py3status"]
 module = "py3status_http_monitor.http_monitor"
 
