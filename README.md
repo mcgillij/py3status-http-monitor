@@ -1,6 +1,8 @@
 # py3status-http-monitor
 Python module for monitoring **http** services in your py3status bar.
 
+[![Downloads](https://static.pepy.tech/personalized-badge/py3status-http-monitor?period=total&units=international_system&left_color=blue&right_color=green&left_text=Downloads)](https://pepy.tech/project/py3status-http-monitor)
+
 ## Screenshot
 ![Status Bar with py3status_http_monitor](https://raw.githubusercontent.com/mcgillij/py3status-http-monitor/main/images/status_bar.png)
 
@@ -43,6 +45,7 @@ sudo pacman -U --asdeps py3status-http-monitor-*-any.pkg.tar.zst
 ## Configuration
 
 Next you will need to add the services you want to monitor, and optionally choose some appropriate emoji's.
+You can also configure actions to open up your browser when you click on the icon, which I find pretty handy.
 
 **~/.config/i3/i3status.conf**
 
@@ -67,16 +70,19 @@ order += "mail"
 http_monitor  'nextcloud' {
    service_location = "http://yourserver:8181"
    service_name = '⛅'
+   on_click 1 = "exec xdg-open http://yourserver:8181"
 }
 
 http_monitor  'virtualbox' {
    service_location = "http://yourserver:81/vb/"
    service_name = '💻'
+   on_click 1 = "exec xdg-open http://yourserver:81/vb/"
 }
 
 http_monitor  'plex' {
    service_location = "http://yourserver:32400/web/index.html#"
    service_name = '🎥'
+   on_click 1 = "exec xdg-open http://yourserver:32400/web/index.html#"
 }
 
 http_monitor  'airsonic' {
@@ -87,6 +93,7 @@ http_monitor  'airsonic' {
 http_monitor  'pihole' {
    service_location = "http://yourserver:80"
    service_name = '🕳️ '
+   on_click 1 = "exec xdg-open http://yourserver:80"
 }
 
 http_monitor  'apache' {
