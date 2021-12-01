@@ -28,6 +28,12 @@ pipenv install py3status-http-monitor
 poetry add py3status-http-monitor && poetry install
 ```
 
+### With `yay`
+
+``` bash
+yay -S py3status-http-monitor
+```
+
 ### Building Arch package w/PKGBUILD
 
 ``` bash
