@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py3status-http-monitor"
-version = "0.1.4"
+version = "0.1.5"
 description = "py3status http monitor show the status of http endpoints"
 authors = ["mcgillij <mcgillivray.jason@gmail.com>"]
 license = "MIT"
@@ -9,7 +9,6 @@ homepage = "https://github.com/mcgillij/py3status-http-monitor"
 repository = "https://github.com/mcgillij/py3status-http-monitor"
 documentation = "https://github.com/mcgillij/py3status-http-monitor"
 keywords = ["http", "monitor", "status", "i3", "py3status"]
-include = [ "LICENSE", ]
 
 classifiers = [
     "Environment :: X11 Applications",
@@ -23,7 +22,7 @@ classifiers = [
 module = "py3status_http_monitor.http_monitor"
 
 [tool.poetry.dependencies]
-python = "^3.9 || ^3.10"
+python = "^3.10 || ^3.11"
 py3status = "^3.34"
 
 [tool.poetry.dev-dependencies]
