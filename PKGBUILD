@@ -10,8 +10,7 @@ license=('MIT')
 depends=('python' 'py3status' 'python-poetry' 'python-build' 'python-installer')
 makedepends=('python-setuptools')
 url="https://github.com/mcgillij/py3status-http-monitor"
-source=("py3status_http_monitor-$pkgver.tar.gz")
-#source=("https://github.com/mcgillij/py3status-http-monitor/releases/download/0.1.4/py3status-http-monitor-0.1.4.tar.gz")
+source=("https://github.com/mcgillij/py3status-http-monitor/releases/download/$pkgver/py3status_http_monitor-$pkgver.tar.gz")
 md5sums=('13b5f03931ed4dc2ba11146c34197945')
 
 build() {
