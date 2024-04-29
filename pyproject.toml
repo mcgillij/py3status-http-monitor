@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py3status-http-monitor"
-version = "0.1.5"
+version = "0.1.6"
 description = "py3status http monitor show the status of http endpoints"
 authors = ["mcgillij <mcgillivray.jason@gmail.com>"]
 license = "MIT"
