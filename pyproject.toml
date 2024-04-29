@@ -22,7 +22,7 @@ classifiers = [
 module = "py3status_http_monitor.http_monitor"
 
 [tool.poetry.dependencies]
-python = "^3.10 || ^3.11"
+python = "^3.10 || ^3.11 || ^3.12"
 py3status = "^3.34"
 
 [tool.poetry.dev-dependencies]
